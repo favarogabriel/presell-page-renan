@@ -1,7 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(pkill -f \"http.server 8723\")"
+      "Bash(pkill -f \"http.server 8723\")",
+      "Bash(python -c ' *)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --window-size=1280,3400 --screenshot=\"C:\\\\Users\\\\Gabriel\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-Gabriel-Documents-projetos-dev-presell-page\\\\aa28aef3-ec4a-44eb-a6b1-a0f8dce41e65\\\\scratchpad\\\\check-planos.png\" http://localhost:8731/index.html)",
+      "Bash(pkill -f \"http.server 8731\")"
     ]
   }
 }
