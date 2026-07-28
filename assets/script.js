@@ -29,4 +29,17 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     observer.observe(hero);
   }
+
+  // Google Ads conversion tracking — fired on click since the actual
+  // purchase happens on GG Concursos' external checkout, not on this site
+  document.querySelectorAll('.cta-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-18309300840/8_drCNqXrdYcEOiEx5pE',
+          'transaction_id': 'click_' + Date.now()
+        });
+      }
+    });
+  });
 });
